@@ -24,7 +24,7 @@ const upload = multer({ storage: storage })
 app.use(cors());
 app.use(bodyParser.json());
 app.use(urlencodedParser = bodyParser.urlencoded({ extended: false }));
-mongoose.connect('mongodb://localhost:27017', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://olx:asif884098hood@atlascluster.b5kd9ju.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("DB Connected."))
   .catch(err => console.error("Error connecting to DB:", err));
 
